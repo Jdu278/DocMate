@@ -1,4 +1,4 @@
-# RetrievalUI
+# DocMate Frontend
 
 This repository lets you upload your files to a vector database (Pinecone). Then you can ask questions that will be answered via OpenAI LLM.
 

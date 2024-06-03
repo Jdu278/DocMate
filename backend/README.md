@@ -1,6 +1,6 @@
-# MockAuthServer
+# DocMate Backend
 ## Description
-This is a an express server that currently mocks an authorization endpoint. 
+This is a an express server that serves as the backend for DocMate.
 
 ## Installation
 ```
