@@ -15,7 +15,6 @@ import { LanguageModel } from './types/LanguageModel'
 import 'dotenv/config'
 
 
-// Configure storage options
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'uploads/')
@@ -28,7 +27,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
-// Delete files after usage
 async function deleteFiles(files: Express.Multer.File[]): Promise<void> {
   const deletePromises = files.map(file => fs.unlink(file.path));
   await Promise.all(deletePromises);
@@ -93,9 +91,7 @@ app.post('/embed', upload.array('files'), async (req, res) => {
 });
 
 app.post('/retrieve', async (req, res) => {
-  const requestData: RetrieveAnswerRequest = req.body;
-
-  const { query, pKey, pIndex, pName, openAIKey, selectedLlm } = requestData;
+  const { query, pKey, pIndex, pName, openAIKey, selectedLlm }: RetrieveAnswerRequest = req.body;
 
   const pineconeConfig: PineconeConfiguration = {
     apiKey: pKey
