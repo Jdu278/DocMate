@@ -143,4 +143,6 @@ app.post('/retrieve', async (req, res) => {
 
 // start server
 const port = process.env.PORT || 4008;
-app.listen(port, () => {})
+app.listen(port, () => {
+  console.log('DocMate backend running...')
+})

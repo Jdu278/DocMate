@@ -1,7 +1,7 @@
 {
-  "name": "AskMyDocksBackend",
-  "version": "1.0.0",
-  "description": "This is a small express that creates a pinecone index with your personal documents. ",
+  "name": "docmatebackend",
+  "version": "0.1",
+  "description": "This is a small express backend that creates a pinecone index with your personal documents.",
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/ts-node src/index.ts"
