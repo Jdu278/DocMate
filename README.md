@@ -3,10 +3,10 @@ This project is a working full-stack application that lets you embed your person
 It is built upon [langchain.js](https://js.langchain.com/v0.2/docs/introduction/) and was inspired by Eden Marco's python course [LangChain- Develop LLM powered applications with LangChain](https://www.udemy.com/course/langchain/) on Udemy.
 ## Progress
 Currently, you can embed your documents and ask a single question. In the future, I plan to integrate a chat component where you can get a proper chat experience with chat history. Furthermore, I would like to make the tool responsive.
-Test it out here: [DocMate](https://retrievaltool-frontend.onrender.com/setup-wiki).
+Test it out here: [DocMate](https://retrievaltool-frontend.onrender.com/).
 ## Tutorial
-A tutorial to embed your documents can be [found here](https://retrievaltool-frontend.onrender.com/setup-wiki).
-A tutorial on how to use the chat afterward can be [found here](https://retrievaltool-frontend.onrender.com/chat-wiki).
+A tutorial to embed your documents can be under `setup-wiki`.
+A tutorial on how to use the chat afterward can be under `chat-wiki`.
 ## Run
 Use node version 20.
 ### Backend
