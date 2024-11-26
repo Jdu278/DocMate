@@ -6,12 +6,12 @@
       <p class="has-text-white">After completing the setup from the page <a href="setup-wiki">Set-up</a>, you can now start to upload your documents.</p>
       <h3 class="has-text-primary pt-4 pb-2">Upload:</h3>
       <ol class="has-text-white">
+        <li>Navigate to the page <router-link to="/" class="has-text-primary nav-link">Set-up</router-link>.</li>
         <li>Fill out the <a href="https://www.pinecone.io/" target="_blank">Pinecone Index</a> (this is the name of the index you created on Pinecone)</li>
-        <li>Fill in a namespace (You added your documents to a certain namespace in the previous step. You can now query documents from any namespace you created)</li>
+        <li>Fill in a namespace. Depending on the name of the namespace, your documents will either be added to an existing namespace, or if the namespace does not exist, it will be created</li>
         <li>Add your Pinecone API key from the setup</li>
         <li>Add your OpenAI API key from the setup</li>
-        <li>Choose the model you want to use to answer your questions: Llama3 (currently free to use), or GPT 3.5 Turbo (via your account)</li>
-        <li>Add your question and press Enter</li>
+        <li>Choose the documents you want to upload (currently only PDF documents work)</li>
       </ol>
       <br>
     </div>
@@ -20,12 +20,12 @@
     <br>
     <h3 class="has-text-primary pt-4 pb-2">Chat:</h3>
     <ol class="has-text-white">
-      <li>Navigate to the page <router-link to="/" class="has-text-primary nav-link">Set-up</router-link>.</li>
       <li>Fill out the <a href="https://www.pinecone.io/" target="_blank">Pinecone Index</a> (this is the name of the index you created on Pinecone)</li>
-      <li>Fill in a namespace. Depending on the name of the namespace, your documents will either be added to an existing namespace, or if the namespace does not exist, it will be created</li>
+      <li>Fill in a namespace (You added your documents to a certain namespace in the previous step. You can now query documents from any namespace you created)</li>
       <li>Add your Pinecone API key from the setup</li>
       <li>Add your OpenAI API key from the setup</li>
-      <li>Choose the documents you want to upload (currently only PDF documents work)</li>
+      <li>Choose the model you want to use to answer your questions: Llama3 (currently free to use), or GPT 3.5 Turbo (via your account)</li>
+      <li>Add your question and press Enter</li>
     </ol>
   </div>
 </template>
